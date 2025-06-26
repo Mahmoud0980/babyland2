@@ -13,7 +13,7 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const handleLogin = () => {
-        axios.post("http://babyland-001-site1.stempurl.com/Login.php", {
+        axios.post("https://babyland.byethost3.com/api/Login.php", {
             email: email,
             password: password
         })
