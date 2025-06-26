@@ -13,7 +13,7 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const handleLogin = () => {
-        axios.post("https://babyland.byethost3.com/api/Login.php", {
+        axios.post("https://babyland-001-site1.stempurl.com/Login.php", {
             email: email,
             password: password
         })
@@ -24,6 +24,7 @@ export default function Login() {
                     // تسجيل الدخول ناجح
                     localStorage.setItem("userName", res.data.name);
                     setMessage(res.data.message);
+                    navigate("/");
 
                     window.location.reload();
                     alert("✅ " + res.data.message);

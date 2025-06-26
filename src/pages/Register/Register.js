@@ -13,10 +13,7 @@ export default function Register() {
     const [username, setUsername] = useState("");
     const handleRegister = async () => {
         try {
-            const response = await axios.post("/register.php", {
-                mode: 'CORS',
-                credentials: 'include',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            const response = await axios.post("https://babyland-001-site1.stempurl.com/register.php", {
                 email,
                 password,
                 username,
@@ -25,7 +22,7 @@ export default function Register() {
             if (response.data.success) {
                 alert("تم إنشاء الحساب بنجاح");
                 localStorage.setItem("userName", username);
-                navigate("/"); // إعادة التوجيه للصفحة الرئيسية
+                navigate("/");
             } else {
                 alert("فشل في إنشاء الحساب: " + response.data.message);
             }
