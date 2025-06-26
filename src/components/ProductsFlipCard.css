@@ -1,0 +1,139 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card-wrapper {
+  width: 280px;
+  height: 420px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-wrapper:hover {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.front-face {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-face {
+  background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.product-title {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.price-tag {
+  background: #ff6b6b;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.color-selector {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-option {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.size-selector {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.size-option {
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.size-option:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.add-to-cart-button {
+  padding: 12px;
+  width: 100%;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 15px;
+}
+
+.add-to-cart-button:hover {
+  background: #ff5252;
+  transform: translateY(-3px);
+}
+
+.more-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.more-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}

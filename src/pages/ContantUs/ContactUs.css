@@ -1,0 +1,92 @@
+/* نفس خلفية "من نحن" */
+.contact-container {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+.contact-card {
+  background-color: #fddbea;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* العنوان */
+.contact-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* النموذج */
+.contact-form {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* زر الإرسال */
+.submit-button {
+  background-color: #f06292;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ec407a;
+}
+
+/* رسالة النجاح */
+.success-message {
+  background-color: #e1f5e8;
+  padding: 20px;
+  border-radius: 15px;
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+/* معلومات التواصل */
+.contact-info {
+  margin-top: 30px;
+  color: #555;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #e91e63;
+  margin-bottom: 10px;
+}

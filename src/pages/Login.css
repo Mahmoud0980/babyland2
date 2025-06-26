@@ -1,0 +1,99 @@
+/* تنسيقات عامة */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 20px;
+}
+
+/* تنسيقات البطاقة */
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+}
+
+.login-header {
+  background-color: #4a6baf;
+  color: white;
+  padding: 20px;
+  border-bottom: none;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* تنسيقات حقول الإدخال */
+.form-floating::placeholder {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  z-index: 10;
+}
+
+.form-control {
+  padding-left: 40px !important;
+  border-radius: 8px !important;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(74, 107, 175, 0.25);
+  border-color: #4a6baf;
+}
+
+/* تنسيقات الزر */
+.login-btn {
+  height: 50px;
+  border-radius: 8px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #4a6baf;
+  border: none;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #3a5a9f;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+/* الروابط */
+.login-links {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* تأثيرات للهواتف */
+@media (max-width: 576px) {
+  .login-card {
+    border-radius: 0;
+  }
+
+  .login-container {
+    padding: 0;
+    background: white;
+  }
+}
+.input::placeholder {
+  direction: rtl;
+  opacity: 1; /* من أجل التأكد من وضوحه */
+}

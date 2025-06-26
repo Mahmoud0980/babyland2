@@ -1,0 +1,10 @@
+#btnP {
+    background-color: #fca10a;
+    border-color: #fca10a;
+  }
+  #btnP:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+  }
+  

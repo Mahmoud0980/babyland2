@@ -1,0 +1,102 @@
+/* SearchResults.css */
+
+/* تنسيقات الصفحة الرئيسية */
+.search-results-page {
+    padding: 40px 0;
+    min-height: 70vh;
+  }
+  
+  .results-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 15px;
+  }
+  
+  /* تنسيقات بطاقات المنتجات */
+  .product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+    height: 100%;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-card .card-body {
+    padding: 20px;
+  }
+  
+  .product-card .card-title {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .product-card .card-text {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* حالة التحميل */
+  .loading-spinner {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  /* حالة عدم وجود نتائج */
+  .no-results {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  /* تأثيرات للعناوين */
+  .no-results:before {
+    content: "😕";
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* تنسيقات متجاوبة */
+  @media (max-width: 768px) {
+    .search-results-page {
+      padding: 20px 0;
+    }
+    
+    .product-card .card-img-top {
+      height: 150px;
+    }
+    
+    .results-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-card {
+      margin-bottom: 15px;
+    }
+  }

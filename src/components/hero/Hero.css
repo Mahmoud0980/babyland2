@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+.hero {
+  font-family: "Cairo", sans-serif;
+  background: linear-gradient(135deg, #fbd3e9 0%, #fce4ec 100%);
+  margin: 40px auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero .img img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero .img img:hover {
+  transform: scale(1.05);
+}
+
+.hero .content {
+  max-width: 500px;
+  text-align: right;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero .content h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero .content h2 span {
+  color: #ff6fa1;
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+}
+
+.hero .content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero .content button {
+  background-color: #ff6fa1;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .content button:hover {
+  background-color: #ff4e89;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
